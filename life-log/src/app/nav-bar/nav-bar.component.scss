@@ -1,10 +1,25 @@
-li, a, ul{
+.navBar{
+    background-color: rgb(72, 212, 254);
+    border-radius: 35px;
+    padding: 5px;
+}
+.navBar h1{
+    text-align: center;
+    flex: 1;
+    font-size: 30px;
+    color: white;   
+    text-shadow: black 1px 1px 1px;
+}
+.navBar li, a, ul{
+    list-style-type: none;
     display: flex;
     justify-content: space-around;
+    margin-right: 20px;
 }
+
 img{
     width: 75px;
     height: 75px;
-    border-radius: 175px;
-    border-color: black;
+    border-radius: 150px;
+    border: 2px solid rgb(0, 224, 86);
 }
