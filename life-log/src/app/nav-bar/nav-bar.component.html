@@ -1,17 +1,20 @@
-<div class="navBar">    
-    <nav>
-        <ul>
-            <img src="./favicon.ico" alt="logo">
-            <h1>Life Log</h1>    
-            <li><a routerLink="/about-us">About Us</a></li>
-            <li><a routerLink="/contact-us">Contact Us</a></li>
-            <li><button>Dark/Light mode</button></li>
-        </ul>
-    </nav>
-</div>
-<!-- 
+<nav class="navbar fixed-top navbar-expand-lg bg-dark">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+          <img src="./favicon.ico" alt="Logo" width="40px" height="40px" class="d-inline-block align-text-top">
+      </a>
+      <div class="mx-auto">
+          <h1 class="text-center">LIFE LOG</h1>
+      </div>
+      <div class="d-flex">
+          <button class="btn btn-outline-primary me-2">About us</button>
+          <button class="btn btn-outline-secondary me-2">Contact us</button>
+          <!-- <button class="btn btn-outline-dark">Dark/Light Mode</button> -->
+      </div>
+  </div>
+</nav>
 
-    NavBar content 
+<!-- NavBar content
 
 - logo (static)
 - title (static)
