@@ -19,6 +19,7 @@ img{
     border: 2px solid rgb(0, 0, 0);
 }
 #about-us-btn:hover{
+    transition: .3s;
     background-color: rgb(5, 185, 201);
     color: white;
 }
@@ -31,6 +32,7 @@ img{
     transition: background-color 0.3s, color 0.3s;
 }
 #contact-us-btn:hover{
+    transition: .3s;
     background-color: rgb(3, 195, 3);
     color: white;
 }

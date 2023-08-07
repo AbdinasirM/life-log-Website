@@ -1,11 +1,34 @@
 *{
     margin-top: 60px;
 }
-
-#sign-in{
-    margin-left: 10px;
+#signUp{
+    background-color: rgb(3, 195, 3);
+    color: white;
+    border: 1px solid rgb(0, 0, 0);
 }
-#sign-up{
-    margin-right: 10px;    
+#signUp:hover{
+    transition: .3s;
+    background-color: rgb(5, 185, 201);
+    color: white;
 }
-
+#signIn{
+    background-color: rgb(5, 185, 201);
+    color: white;
+    border: 1px solid rgb(0, 0, 0);
+}
+#signIn:hover{
+    transition: .3s;
+    background-color: rgb(3, 195, 3);
+    opacity: 0.8;
+    color: white;
+}
+#sign-google{
+    background-color: rgb(158, 158, 158);
+    color: black;
+    border: 1px solid rgb(0, 0, 0);
+}
+#sign-google:hover{
+    transition: .3s;
+    background-color: rgb(9, 177, 255);
+    color: white;
+}
