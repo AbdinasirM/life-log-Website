@@ -1,5 +1,5 @@
 *{
-    margin-top: 60px;
+    margin-top: 55px;
 }
 #signUp{
     background-color: rgb(3, 195, 3);
@@ -8,7 +8,7 @@
 }
 #signUp:hover{
     transition: .3s;
-    background-color: rgb(5, 185, 201);
+    background-color: rgb(1, 156, 1);
     color: white;
 }
 #signIn{
@@ -18,17 +18,17 @@
 }
 #signIn:hover{
     transition: .3s;
-    background-color: rgb(3, 195, 3);
+    background-color: rgb(2, 139, 151);
     opacity: 0.8;
     color: white;
 }
 #sign-google{
-    background-color: rgb(158, 158, 158);
+    background-color: rgb(182, 180, 180);
     color: black;
     border: 1px solid rgb(0, 0, 0);
 }
 #sign-google:hover{
     transition: .3s;
-    background-color: rgb(9, 177, 255);
+    background-color: #DB4437;
     color: white;
 }
