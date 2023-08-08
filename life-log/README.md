@@ -1,27 +1,30 @@
-# LifeLog
+# Life Log Website
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
+Welcome to Life Log – your personal well-being platform built using Angular and MongoDB.
 
-## Development server
+## About
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Life Log is an all-inclusive platform that seamlessly blends the art of self-expression through journaling with the science of holistic health tracking. It offers you a harmonious space to reflect, grow, and nurture your physical, emotional, and mental wellness.
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Journaling:** Express yourself through the power of journaling. Write down your thoughts, ideas, and experiences in a safe and private space.
 
-## Build
+- **Health Tracking:** Monitor your well-being journey by tracking your physical, emotional, and mental health. Set goals and track your progress.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **User-Friendly Interface:** Life Log provides an intuitive and user-friendly interface designed to make your experience enjoyable and meaningful.
 
-## Running unit tests
+## Getting Started
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Link to demo site: (coming soon)
 
-## Running end-to-end tests
+To run the Life Log website locally, follow these steps:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. Clone the repository:
 
-## Further help
+```sh
+git clone https://github.com/your-username/life-log.git
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+npm install -g @angular/cli
+
+ng serve
