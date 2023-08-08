@@ -29,6 +29,9 @@ git clone https://github.com/AbdinasirM/life-log-Website/
 ```sh
 npm install -g @angular/cli
 ```
+```sh
+npm install
+```
 
 ```sh
 ng serve
