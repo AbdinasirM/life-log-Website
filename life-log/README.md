@@ -27,9 +27,11 @@ To run the Life Log website locally, follow these steps:
 ```sh
 git clone https://github.com/your-username/life-log.git
 ```
+
 ```sh
 npm install -g @angular/cli
 ```
+
 ```sh
 ng serve
 ```
