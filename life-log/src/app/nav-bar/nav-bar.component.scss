@@ -1,4 +1,6 @@
-
+.navbar{
+    background-color: rgb(48, 48, 48);
+}
 img{
     width: 85px;
     height: 85px;
@@ -16,7 +18,7 @@ img{
 #about-us-btn{
     background-color: rgb(3, 195, 3);
     color: white;
-    border: 2px solid rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
 }
 #about-us-btn:hover{
     transition: .3s;
@@ -28,7 +30,7 @@ img{
 #contact-us-btn{
     background-color: rgb(5, 185, 201);
     color: white;
-    border: 2px solid rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
     transition: background-color 0.3s, color 0.3s;
 }
 #contact-us-btn:hover{
