@@ -22,8 +22,6 @@ Link to demo site: (coming soon)
 
 To run the Life Log website locally, follow these steps:
 
-1. Clone the repository:
-
 ```sh
 git clone https://github.com/your-username/life-log.git
 ```
