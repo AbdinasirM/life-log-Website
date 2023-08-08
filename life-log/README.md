@@ -1,6 +1,6 @@
 # Life Log Website
 
-Welcome to Life Log – your personal well-being platform built using Angular and MongoDB.
+Welcome to Life Log – your personal well-being platform built using Angular, TypeScript and MongoDB.
 
 ![Life Log Screenshot](./src/Capture.PNG)
 
