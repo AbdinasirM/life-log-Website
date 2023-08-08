@@ -1,8 +1,8 @@
 # Life Log Website
 
-Welcome to Life Log – your personal well-being platform built using Angular and MongoDB.
+Welcome to Life Log – your personal well-being platform built using Angular, TypeScript and MongoDB.
 
-![Life Log Screenshot](../Capture.png)
+![Life Log Screenshot](./src/Capture.PNG)
 
 ## About
 
@@ -22,11 +22,14 @@ Link to demo site: (coming soon)
 
 To run the Life Log website locally, follow these steps:
 
-1. Clone the repository:
+```sh
+git clone https://github.com/AbdinasirM/life-log-Website/
+```
 
 ```sh
-git clone https://github.com/your-username/life-log.git
-
 npm install -g @angular/cli
+```
 
+```sh
 ng serve
+```
