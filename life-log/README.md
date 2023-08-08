@@ -23,7 +23,7 @@ Link to demo site: (coming soon)
 To run the Life Log website locally, follow these steps:
 
 ```sh
-git clone https://github.com/your-username/life-log.git
+git clone https://github.com/AbdinasirM/life-log-Website/
 ```
 
 ```sh
