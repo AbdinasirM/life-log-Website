@@ -10,4 +10,7 @@ export class SignInAndSignUpComponent {
   signIn() {
     this.router.navigate(['/sign-in']);
   }
+  signOut() {
+    this.router.navigate(['/sign-up']);
+  }
 }
