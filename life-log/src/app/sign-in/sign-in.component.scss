@@ -1,6 +1,21 @@
 .col-md-6{
     margin-top: 17.5%;
 }
+.card-header{
+    background-color: #5f5f5f;
+    color: white;
+}
+#submitBtn{
+    background-color: rgb(5, 185, 201);
+    border: 1px solid black;
+}
+#submitBtn:hover{
+    transition: .3s;
+    background-color: rgb(2, 139, 151);
+    opacity: 0.8;
+    color: white;
+}
+
 #sign-google{
     border: 1px solid black;
     color: black;
