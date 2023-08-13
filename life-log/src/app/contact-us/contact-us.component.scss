@@ -1,0 +1,14 @@
+.col-md-6{
+    margin-top: 18%;
+}
+#submitBtn{
+    margin-top: 2%;
+    background-color: rgb(5, 185, 201);
+    border: 1px solid black
+}
+#submitBtn:hover{
+    transition: .3s;
+    background-color: rgb(2, 139, 151);
+    opacity: 0.8;
+    color: white;
+}

@@ -10,6 +10,8 @@ import { FeedbackComponent } from './landing-page/feedback/feedback.component';
 import { FooterComponent } from './landing-page/footer/footer.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     FeedbackComponent,
     FooterComponent,
     LandingPageComponent,
-    SignUpComponent
+    SignUpComponent,
+    AboutUsComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
