@@ -1,28 +1,28 @@
 .row {
-    align-items: center;
-    margin-top: 15%;
+	align-items: center;
+	margin-top: 15%;
 	top: 17.5%;
 	transform: transformY(17.5);
 }
-.icons img{
-    width: auto;
-    height: 27px;
-    margin-right: 2px;
+.icons img {
+	width: auto;
+	height: 27px;
+	margin-right: 2px;
 }
-.icons img:hover{
-    transition: .3s;
-    transform: scale(1.1);
+.icons img:hover {
+	transition: 0.3s;
+	transform: scale(1.1);
 }
-#aboutPara{
-    letter-spacing: 1px;
+#aboutPara {
+	letter-spacing: 1px;
 }
-#brendanPic{
- width: 80%;
-  border-radius: 450px;
-  border: 2px solid rgb(5, 185, 201);
+#brendanPic {
+	width: 80%;
+	border-radius: 450px;
+	border: 2px solid rgb(5, 185, 201);
 }
-#abdiPic{
-    width: 80%;
-    border-radius: 50px;
-    border: 2px solid rgb(7, 224, 0);
+#abdiPic {
+	width: 80%;
+	border-radius: 450px;
+	border: 2px solid rgb(5, 185, 201);
 }
