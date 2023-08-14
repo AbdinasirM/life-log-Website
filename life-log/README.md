@@ -5,6 +5,7 @@ Welcome to Life Log – your personal well-being platform built using Angular, T
 ![Life Log Screenshot](./src/Capture.PNG)
 ![Life Log Screenshot](./src/Capture2.PNG)
 
+
 ## About
 
 Life Log is an all-inclusive platform that seamlessly blends the art of self-expression through journaling with the science of holistic health tracking. It offers you a harmonious space to reflect, grow, and nurture your physical, emotional, and mental wellness.
