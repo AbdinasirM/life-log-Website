@@ -4,8 +4,8 @@ Welcome to Life Log – your personal well-being platform built using Angular, T
 
 ![Life Log Screenshot](./src/Capture.PNG)
 ![Life Log Screenshot](./src/test.PNG)
-![Life Log Screenshot](../assets/Capture.PNG)
-![Life Log Screenshot](../assets/Capture1.PNG)
+![Life Log Screenshot](./src/assets/Capture.PNG)
+![Life Log Screenshot](./src/assets/Capture1.PNG)
 
 
 ## About
