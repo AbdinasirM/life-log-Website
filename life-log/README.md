@@ -3,7 +3,7 @@
 Welcome to Life Log – your personal well-being platform built using Angular, TypeScript and MongoDB.
 
 ![Life Log Screenshot](./src/Capture.PNG)
-![Life Log Screenshot](./src/Capture2.PNG)
+![Life Log Screenshot](./src/test.PNG)
 
 ## About
 
