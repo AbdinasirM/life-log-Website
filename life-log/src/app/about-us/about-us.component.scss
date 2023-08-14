@@ -1,10 +1,21 @@
 .row {
     align-items: center;
-	top: 15%;
-	transform: transformY(15);
+    margin-top: 17.5%;
+	top: 17.5%;
+	transform: transformY(17.5);
+
+}
+.icons img{
+    width: auto;
+    height: 27px;
+    margin-right: 2px;
+}
+.icons img:hover{
+    transition: .3s;
+    transform: scale(1.1);
 }
 #aboutPara{
-    
+    letter-spacing: 1px;
 }
 #brendanPic{
  width: 80%;
