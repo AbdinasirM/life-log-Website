@@ -1,16 +1,21 @@
-.col-md-6 {
-	position: absolute;
-	top: 25%;
-	transform: transformY(25);
+.col-md-6{
+    position: absolute;
+    top: 25%;
+    transform: transformY(25);
 }
-#submitBtn {
-	margin-top: 2%;
-	background-color: rgb(5, 185, 201);
-	border: 1px solid black;
+#submitBtn{
+    margin-top: 2%;
+    background-color: rgb(5, 185, 201);
+    border: 1px solid black
 }
-#submitBtn:hover {
-	transition: 0.3s;
-	background-color: rgb(2, 139, 151);
-	opacity: 0.8;
-	color: white;
+#submitBtn:hover{
+    transition: .3s;
+    background-color: rgb(2, 139, 151);
+    opacity: 0.8;
+    color: white;
+}
+app-footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
