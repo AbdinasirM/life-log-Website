@@ -12,6 +12,9 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { HomeComponent } from './home/home.component';
+import { JournalComponent } from './journal/journal.component';
+import { HealthComponent } from './health/health.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     LandingPageComponent,
     SignUpComponent,
     AboutUsComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    HomeComponent,
+    JournalComponent,
+    HealthComponent
   ],
   imports: [
     BrowserModule,
