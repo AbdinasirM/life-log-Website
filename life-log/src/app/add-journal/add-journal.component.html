@@ -1,0 +1,33 @@
+<div class="container mt-5">  
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6 bg-light p-4 rounded shadow">
+        <form [formGroup]="journalForm" (ngSubmit)="addJournal()">
+          <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" class="form-control" id="title" formControlName="title">
+            <div *ngIf="journalForm.controls['title'].invalid && journalForm.controls['title'].touched" class="text-danger">
+              Title is required.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="about" class="form-label">About the Journal</label>
+            <textarea class="form-control" id="about" formControlName="about" rows="3"></textarea>
+            <div *ngIf="journalForm.controls['about'].invalid && journalForm.controls['about'].touched" class="text-danger">
+              Text is required.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="text" class="form-label">Text</label>
+            <textarea class="form-control" id="text" formControlName="text" rows="5"></textarea>
+            <div *ngIf="journalForm.controls['text'].invalid && journalForm.controls['text'].touched" class="text-danger">
+              Text is required.
+            </div>
+          </div>
+          <div class="d-grid">
+            <button type="submit" class="btn btn-primary" [disabled]="journalForm.invalid">Save Journal</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
