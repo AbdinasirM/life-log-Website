@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output, OnInit } from '@angular/core';
-import { JournalService } from '../journal/journal.service';
+import { JournalService } from '../journal.service';
 import { Router } from '@angular/router';
 
 @Component({

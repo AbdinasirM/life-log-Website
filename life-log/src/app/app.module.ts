@@ -18,6 +18,7 @@ import { HealthComponent } from './health/health.component';
 import { AddJournalComponent } from './add-journal/add-journal.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms'; // Import FormsModule
 
 
 @NgModule({
@@ -44,6 +45,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

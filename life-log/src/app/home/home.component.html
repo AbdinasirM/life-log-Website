@@ -1,1 +1,172 @@
-<p>home works!</p>
+<!-- <h1>Your Profile</h1>
+<pre>{{ user | json }}</pre>
+ -->
+
+ <!-- <h1>Your Profile</h1>
+ <p>Welcome {{ user.name }}</p>
+ <p>Email: {{ user.email }}</p>
+  Display other user properties as needed 
+ <div *ngIf="journals.length > 0">
+     <h2>Your Journals</h2>
+     <ul>
+       <li *ngFor="let journal of journals">{{ journal.title }}</li>
+       <li *ngFor="let journal of journals">{{ journal.text }}</li>
+ 
+        Display other journal properties you want 
+     </ul>
+   </div> -->
+<!--  
+ 
+ <div class="container mt-5">
+     <div class="d-flex justify-content-between align-items-center mb-4">
+       <h1 class="text-end mb-0" style="font-size: 2rem">MY JOURNAL</h1>
+       <a routerLink="/addjournal" class="btn btn-success add">
+         <i class="fas fa-plus"></i>
+       </a>
+     </div>
+   
+     <div class="list-group" *ngFor="let journal of journals; let i = index">
+       <a
+         href="#"
+         class="list-group-item list-group-item-action"
+         aria-current="true"
+         data-bs-toggle="modal"
+         [attr.data-bs-target]="'#modal' + i"
+       >
+         <div class="d-flex w-100 justify-content-between">
+           <h5 class="mb-1">{{ journal.title }}</h5>
+           <small>{{ formatTimestamp(journal.createdAt) }}</small> 
+         </div>
+         <p class="mb-1">{{ journal.about }}</p>
+       </a>
+       <div
+         class="modal fade"
+         [id]="'modal' + i"
+         tabindex="-1"
+         aria-labelledby="exampleModalLabel"
+         aria-hidden="true"
+       >
+         <div class="modal-dialog modal-dialog-centered modal-lg">
+           <div class="modal-content">
+             <div class="modal-header">
+               <h5 class="modal-title">{{ journal.title }}</h5>
+               <button
+                 type="button"
+                 class="btn-close"
+                 data-bs-dismiss="modal"
+                 aria-label="Close"
+               ></button>
+             </div>
+             <div class="modal-body overflow-auto text-break">
+               <img src="{{ journal.img }}" class="img-fluid mb-3" alt="..." />
+               <p>{{ journal.text }}</p>
+               <small>{{ formatTimestamp(journal.createdAt) }}</small>              </div>
+             <div class="modal-footer">
+               <button
+                 type="button"
+                 class="btn btn-primary"
+                 data-bs-dismiss="modal"
+               >
+                 Close
+               </button>
+               <button
+                 type="button"
+                 class="btn btn-success"
+                 data-bs-dismiss="modal"
+               >
+                 Edit
+               </button>
+               <button
+                 type="button"
+                 class="btn btn-danger"
+                  (click)="deleteJournal(i)"
+                 data-bs-dismiss="modal"
+               >
+                 Delete
+               </button> 
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+    -->
+
+
+<div class="container mt-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h1 class="text-end mb-0" style="font-size: 2rem">MY JOURNAL</h1>
+      <a routerLink="/addjournal" class="btn btn-success add">
+        <i class="fas fa-plus"></i>
+      </a>
+    </div>
+  
+    <div class="list-group" *ngFor="let journal of journals; let i = index">
+      <a
+        href="#"
+        class="list-group-item list-group-item-action"
+        aria-current="true"
+        data-bs-toggle="modal"
+        [attr.data-bs-target]="'#modal' + i"
+      >
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">{{ journal.title }}</h5>
+          <small>{{ formatTimestamp(journal.createdAt) }}</small>
+        </div>
+        <p class="mb-1">{{ journal.about }}</p>
+      </a>
+      <div
+        class="modal fade"
+        [id]="'modal' + i"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">{{ journal.title }}</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body overflow-auto text-break">
+              <img src="{{ journal.img }}" class="img-fluid mb-3" alt="..." />
+              <p>{{ journal.text }}</p>
+              <small>{{ formatTimestamp(journal.createdAt) }}</small>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <!-- <button
+                type="button"
+                class="btn btn-success"
+                data-bs-dismiss="modal"
+              >
+                Edit
+              </button> -->
+              <!-- <button
+                type="button"
+                class="btn btn-danger"
+                (click)="deleteJournal(i)"
+                data-bs-dismiss="modal"
+              >
+                Delete
+              </button> -->
+              <button class="btn btn-danger " (click)="deleteJournal(journal._id)"  >Delete</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
