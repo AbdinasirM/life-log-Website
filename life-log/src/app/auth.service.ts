@@ -34,6 +34,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators'; // Import the map operator
 
 
 @Injectable({
@@ -80,5 +81,13 @@ export class AuthService {
   
     return this.http.post(url, null, { headers });
   }
-
+  getCurrentUser(): Observable<any> {
+    const token = localStorage.getItem('token');
+    if (token) {
+      const headers = this.getAuthHeaders(token);
+      const currentUserUrl = `${this.apiUrl}/users/me`; // Update with your API endpoint
+      return this.http.get<any>(currentUserUrl, { headers });
+    }
+    return new Observable<any>(observer => observer.next(null));
+  }
 }

@@ -1,0 +1,247 @@
+<!-- <div class="container mt-4 mb-3">
+    <h3 class="text-muted text-center">Monitor Your Daily Wellness</h3>
+    <form>
+        <div class="mb-3 mt-4">
+            <input type="text" class="form-control" id="breakfastInput" placeholder="Breakfast" />
+        </div>
+        <div class="mb-3 mt-2">
+            <input type="text" class="form-control" id="lunchInput" placeholder="Lunch" />
+        </div>
+        <div class="mb-3 mt-2">
+            <input type="text" class="form-control" id="dinnerInput" placeholder="Dinner" />
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <input type="number" class="form-control" id="waterConsumption"
+                    placeholder="Water Consumption (liters)" />
+            </div>
+            <div class="col-md-6">
+                <input type="number" class="form-control" id="exerciseMinutes" placeholder="Exercise Hours" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <input type="number" class="form-control" id="sleepHours" placeholder="Sleep Hours" />
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control" id="snackNames" placeholder="Snack Names" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <input type="number" class="form-control" id="snackCount" placeholder="Snack Count" />
+            </div>
+            <div class="col-md-6">
+                <input type="number" class="form-control" id="stepsTaken" placeholder="Steps Taken" />
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <button class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>
+
+
+
+
+<br>
+<br>
+
+<div class="container mt-5 ">
+    <div class="d-flex justify-content-between mb-3">
+        <h3 class="text-muted text-center">Your Health Journey</h3>
+        <button class="btn btn-primary">Refresh</button>
+    </div>
+   
+    <div class="card mb-3">
+        <div class="row g-0">
+
+            <div class="col-md-4 card-image">
+                <hr>
+                <hr>
+                <hr>
+            </div>
+            <div class="col-md-8">
+            
+                <ul class="list-group">
+                    <li class="list-group-item   align-items-center">
+                        <i class="fas icon fa-pizza-slice text-danger "></i>
+                        <span class="mr-2 ml-3 text-center">Breakfast: Ceareal</span>
+                    </li>
+                    <li class="list-group-item   align-items-center">
+                        <i class="fas icon fa-pizza-slice text-danger "></i>
+                        <span class="mr-2 ml-3">Lunch: Chicken and rice</span>
+                    </li>
+                    <li class="list-group-item  align-items-center">
+                        <i class="fas icon fa-pizza-slice text-danger "></i>
+                        <span class="mr-2 ml-3">Dinner: Pizza</span>
+                    </li>
+
+
+                    <li class="list-group-item d-flex justify-content-between align-items-center ">
+                        <i class="fas icon fa-dumbbell  text-dark"></i> 
+
+                        <span>Exercise: Chest Day</span>
+                        <span class=" badge bg-primary">2 hours</span> 
+
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center ">
+                        <i class="fas icon fa-glass-whiskey  text-primary"></i> 
+
+                        <span>Water Consumption</span>
+                        <span class=" badge bg-primary">2 hours</span> 
+
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center ">
+                        <i class="fas icon fa-apple-alt  text-danger"></i> 
+
+                        <span>Snack: Greek Yogurt</span>
+                        <span class=" badge bg-primary">2 hours</span> 
+
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center ">
+                        <i class="fas icon fa-bed  text-primary"></i> 
+
+                        <span>Night Sleep</span>
+                        <span class=" badge bg-primary">2 hours</span> 
+
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center ">
+                        <i class="fas icon fa-walking  text-dark"></i> 
+
+                        <span>Walked</span>
+                        <span class=" badge bg-primary">2 hours</span> 
+
+                    </li>
+                </ul>
+
+            </div>
+            <div class="card-footer text-center text-light bg-dark">
+                Aug 23 2023 8:00 PM
+            </div>
+        </div>
+ -->
+
+    <!-- </div> -->
+
+
+ 
+
+
+ <div class="container mt-4 mb-3">
+    <h3 class="text-muted text-center">Monitor Your Daily Wellness</h3>
+    <form (ngSubmit)="onSubmit()">
+      <div class="mb-3 mt-4">
+        <input type="text" class="form-control" [(ngModel)]="wellnessEntry.breakfast" name="breakfast" placeholder="Breakfast" />
+      </div>
+      <div class="mb-3 mt-2">
+        <input type="text" class="form-control" [(ngModel)]="wellnessEntry.lunch" name="lunch" placeholder="Lunch" />
+      </div>
+      <div class="mb-3 mt-2">
+        <input type="text" class="form-control" [(ngModel)]="wellnessEntry.dinner" name="dinner" placeholder="Dinner" />
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <input type="number" class="form-control" [(ngModel)]="wellnessEntry.waterconsumption" name="waterconsumption" placeholder="Water Consumption (liters)" />
+        </div>
+        <div class="col-md-6">
+          <input type="number" class="form-control" [(ngModel)]="wellnessEntry.exerciseHours" name="exerciseHours" placeholder="Exercise Hours" />
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <input type="number" class="form-control" [(ngModel)]="wellnessEntry.sleepHours" name="sleepHours" placeholder="Sleep Hours" />
+        </div>
+        <div class="col-md-6">
+          <input type="text" class="form-control" [(ngModel)]="wellnessEntry.snackNames" name="snackNames" placeholder="Snack Names" />
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <input type="number" class="form-control" [(ngModel)]="wellnessEntry.snackCount" name="snackCount" placeholder="Snack Count" />
+        </div>
+        <div class="col-md-6">
+          <input type="number" class="form-control" [(ngModel)]="wellnessEntry.stepsTaken" name="stepsTaken" placeholder="Steps Taken" />
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+  </div>
+  
+  <br><br>
+  
+ 
+  <div class="container mt-5">
+    <div class="d-flex justify-content-between mb-3">
+      <h3 class="text-muted text-center">Your Health Journey</h3>
+      <button class="btn btn-primary" (click)="refresh()">Refresh</button>
+    </div>
+  
+    <div class="card mb-3" *ngFor="let entry of wellnessEntries">
+      <div class="row g-0">
+        <div class="col-md-4 card-image">
+            <hr>
+            <hr>
+            <hr>
+          <!-- Add your image or content here -->
+        </div>
+        <div class="col-md-8">
+          <ul class="list-group">
+            <li class="list-group-item  align-items-center">
+              <i class="fas icon fa-pizza-slice text-danger"></i>
+              <span class="mr-2 ml-3">{{ entry.breakfast }}</span>
+            </li>
+            
+            <li class="list-group-item  align-items-center">
+              <i class="fas icon fa-pizza-slice text-danger"></i>
+              <span class="mr-2 ml-3">{{ entry.lunch }}</span>
+            </li>
+            <li class="list-group-item  align-items-center">
+              <i class="fas icon fa-pizza-slice text-danger"></i>
+              <span class="mr-2 ml-3">{{ entry.dinner }}</span>
+            </li>
+            
+            <li class="list-group-item d-flex justify-content-between align-items-center ">
+                <i class="fas icon fa-dumbbell text-dark"></i>
+                <span>Exercise:</span>
+                <span class=" badge bg-primary">{{ entry.exerciseHours }} hours</span> 
+
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center ">
+                <i class="fas icon fa-glass-whiskey text-primary"></i>
+                <span>Water Consumption:</span>
+                <span class=" badge bg-primary">{{ entry.waterconsumption }} liters</span> 
+
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center ">
+                <i class="fas icon fa-apple-alt text-danger"></i>
+                <span>Snack: </span>
+                <span class=" badge bg-primary">{{ entry.snackNames }}</span> 
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center ">
+                <i class="fas icon fa-bed text-primary"></i>
+                <span>Night Sleep:</span>
+                <span class=" badge bg-primary">{{ entry.sleepHours }} hours</span> 
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center ">
+                <i class="fas icon fa-walking text-dark"></i>
+                <span>Walked: </span>
+                <span class=" badge bg-primary">{{ entry.stepsTaken }} steps</span> 
+              </li>
+            <!-- Add other entries here (exercise, water consumption, etc.) -->
+          </ul>
+        </div>
+      
+        <div class="card-footer text-center text-light bg-dark">
+            <small>{{ formatTimestamp(entry.createdAt) }}</small>
+        </div>
+        
+      </div>
+      <div class="d-flex justify-content-center mt-4 mb-3">
+        <button type="submit" class="btn btn-danger" (click)="delete(entry._id)">Delete</button>
+      </div>
+    </div>
+  </div>
+  

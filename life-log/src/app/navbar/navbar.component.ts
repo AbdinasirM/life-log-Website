@@ -16,7 +16,13 @@ export class NavBarComponent {
     this.router.navigate(['/contact-us']);
   }
   journal() {
-    this.router.navigate(['/users/me']);
+    this.router.navigate(['/journals']);
+  }
+  wellness() {
+    this.router.navigate(['/wellness']);
+  }
+  home() {
+    this.router.navigate(['/home']);
   }
   //   isLoggedIn(): boolean {
   //     return this.authService.isLoggedIn();
@@ -104,7 +110,7 @@ logOutAll() {
     () => {
       console.log('Logged out from all platforms');
       this.authService.clearToken(); // Clear token from local storage
-      this.router.navigate(['/sign-in']);
+      this.router.navigate(['/']);
     },
     (error) => {
       console.error('Error logging out from all platforms', error);

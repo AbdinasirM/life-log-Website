@@ -46,7 +46,7 @@ export class AuthGuard implements CanActivate {
     if (state.url === '/sign-in') {
       if (isAuthenticated) {
         // Redirect authenticated users to /users/me
-        return this.router.parseUrl('/users/me');
+        return this.router.parseUrl('/home');
       } else {
         // Allow unauthenticated users to access the sign-in page
         return true;
@@ -55,16 +55,17 @@ export class AuthGuard implements CanActivate {
     if (state.url === '/sign-up') {
       if (isAuthenticated) {
         // Redirect authenticated users to /users/me
-        return this.router.parseUrl('/users/me');
+        return this.router.parseUrl('/home');
       } else {
         // Allow unauthenticated users to access the sign-in page
         return true;
       }
     }
-
+    
+//asasas
     if (!isAuthenticated) {
       // Redirect to sign-in page if not authenticated
-      return this.router.parseUrl('/sign-in');
+      return this.router.parseUrl('/');
     }
 
     return isAuthenticated;

@@ -48,7 +48,7 @@ router.get('/users/me', auth, async (req, res) => {
   try {
     const user = req.user; // The authenticated user object
     const journals = await Note.find({ createdBy: user._id }); // Fetch journals created by the user
-
+    
     res.json({
       user: {
         name: user.name,

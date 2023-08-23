@@ -160,11 +160,11 @@ import { Router } from '@angular/router';
 
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-journals',
+  templateUrl: './journals.component.html',
+  styleUrls: ['./journals.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class JournalsComponent implements OnInit {
   user: any;
   journals: any[] = []; // Initialize journals as an empty array
 

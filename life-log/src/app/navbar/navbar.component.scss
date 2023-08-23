@@ -67,6 +67,32 @@ img {
   color: #fff;
   
 }
+
+#wellness-btn{
+  margin-left: 5px;
+  background-color: #ffffff;
+  color: #000;
+  cursor: pointer;
+}
+
+#wellness-btn:hover {
+  background-color: #000;
+  color: #ffffff;
+  
+}
+
+#home-btn{
+  margin-left: 5px;
+  background-color: #f9ff9e;
+  color: #000;
+  cursor: pointer;
+}
+
+#home-btn:hover {
+  background-color: #f9ff9e;
+  color: #0000009d;
+  
+}
 //----------------------------------------------------------------
 .nav-button {
   display: inline-block;

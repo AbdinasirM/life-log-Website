@@ -29,13 +29,14 @@ export class SignInComponent {
   async onSubmit() {
     try {
       const response = await this.authService.login(this.credentials).toPromise();
-      console.log('Login successful', response);
+      // console.log('Login successful', response);
 
       localStorage.setItem('token', response.token);
 
-      this.router.navigate(['/users/me']); // Redirect after successful login
+      this.router.navigate(['/home']); // Redirect after successful login
     } catch (error) {
       console.error('Login error', error);
+      window.alert('Login error: make sure you have registered account and password');
      
       // Handle login error here, show error message to user if needed
     }

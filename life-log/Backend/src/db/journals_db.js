@@ -15,6 +15,9 @@
 
 const mongoose = require("mongoose");
 
+
+
+
 mongoose.connect("mongodb+srv://plstk7623:ezXHp1fGqSxx0A8y@cluster0.bxipjxd.mongodb.net/note-taking-db", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -23,7 +26,7 @@ mongoose.connect("mongodb+srv://plstk7623:ezXHp1fGqSxx0A8y@cluster0.bxipjxd.mong
 const journalDB = mongoose.connection;
 journalDB.on("error", console.error.bind(console, "Connection error:"));
 journalDB.once("open", () => {
-  console.log("Connected to notes database");
+  console.log("Connected to the database");
 });
 
 module.exports = journalDB;

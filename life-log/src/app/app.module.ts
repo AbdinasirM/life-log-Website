@@ -12,13 +12,15 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
-import { HomeComponent } from './home/home.component';
+import { JournalsComponent } from './journals/journals.component';
 import { JournalComponent } from './journal/journal.component';
 import { HealthComponent } from './health/health.component';
 import { AddJournalComponent } from './add-journal/add-journal.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms'; // Import FormsModule
+import { FormsModule } from '@angular/forms';
+import { WellnessComponent } from './wellness/wellness.component';
+import { UserHomeComponent } from './user-home/user-home.component'; // Import FormsModule
 
 
 @NgModule({
@@ -33,10 +35,12 @@ import { FormsModule } from '@angular/forms'; // Import FormsModule
     SignUpComponent,
     AboutUsComponent,
     ContactUsComponent,
-    HomeComponent,
+    JournalsComponent,
     JournalComponent,
     HealthComponent,
     AddJournalComponent,
+    WellnessComponent,
+    UserHomeComponent,
     
 
   ],

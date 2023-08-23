@@ -1,0 +1,114 @@
+/* .list-group{
+    border: yellow solid 2px;
+} */
+
+
+/* .form {
+    padding: 20px;
+}
+
+.form-label {
+    margin-bottom: 8px;
+}
+
+.form-control {
+    margin-bottom: 16px;
+}
+
+.card {
+    border: none;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+}
+
+.card-text {
+    font-size: 0.875rem;
+    margin-bottom: 12px;
+}
+
+.card-number {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 10px;
+} */
+
+ /* Custom CSS to adjust image size */
+/* .img {
+    width: 20em;
+    height: 12em;
+    
+}  */
+
+
+  /* Custom CSS to adjust image size */
+  /* .img {
+    width: 4em;
+    height: 4em;
+    object-fit: cover;
+  } */
+
+  .card-image {
+    background-image: url('../../assets/meals.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    /* width: 100%;
+    height: 100%; */
+  }
+  
+  hr{
+    display:inline-flex;
+    height: 20px;
+  }
+ 
+
+.text-wrap {
+    word-wrap: break-word;
+}
+
+.icon{
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.list-group-item:hover{
+    background-color: bisque;
+}
+
+.badge{
+    height: 25px;
+}
+/* .exercise{
+    margin-right: 37px;
+} */
+
+/* .sleep{
+    margin-right: 87px;
+}
+.walk{
+
+        margin-right: 87px;
+    } */
+/* Prevent text overflow */
+/* .list-group-item {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+} */
+/* ul:hover{
+    background-color: bisque;
+} */
+
+/* Adjust spacing for better responsiveness */
+/* .list-group-horizontal {
+    flex-direction: column;
+    align-items: flex-start;
+} */
+/* 
+.list-group-horizontal > .list-group-item {
+    width: 100%;
+} */

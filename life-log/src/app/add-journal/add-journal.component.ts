@@ -87,7 +87,7 @@ export class AddJournalComponent {
       )
       .subscribe((result) => {
         if (result) {
-          this.router.navigate(['users/me']); // Redirect after successful addition
+          this.router.navigate(['journals']); // Redirect after successful addition
         }
       });
   }

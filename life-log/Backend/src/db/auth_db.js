@@ -42,10 +42,10 @@
 // module.exports = authDBConnection;
 
 
-const mongoose = require('mongoose');
-const authDBUrl = process.env.MONGODB_AUTH_URL;
-const authDBConnection = mongoose.createConnection(authDBUrl, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
-module.exports = authDBConnection;
+// const mongoose = require('mongoose');
+// const authDBUrl = process.env.MONGODB_AUTH_URL;
+// const authDBConnection = mongoose.createConnection(authDBUrl, {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+// });
+// module.exports = authDBConnection;

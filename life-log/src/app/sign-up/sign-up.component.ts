@@ -31,6 +31,7 @@ export class SignUpComponent {
       },
       (error) => {
         console.error('Sign-up error', error);
+        alert('Sign-up error' + error.message);
         // Handle sign-up error here, e.g., show an error message to the user
       }
     );
