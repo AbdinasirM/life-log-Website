@@ -1,3 +1,4 @@
+/* Styling for user profile images */
 img {
   width: 55px;
   height: 55px;
@@ -5,16 +6,19 @@ img {
   border: 2px solid rgb(7, 224, 0);
 }
 
+/* Styling for web page title */
 .web-title {
   font-family: "Roboto-Mono";
   font-size: 20px;
   color: #fff;
 }
+
+/* Styling for the navigation bar */
 .navbar{
   background-color: #000000;
 }
 
-
+/* Styling for the logout button */
 #logout-btn{
   margin-left: 5px;
   background-color: #F76526;
@@ -25,36 +29,34 @@ img {
 #logout-btn:hover {
   background-color: #F76526;
   color: #fff;
-  
 }
 
-
+/* Styling for the "About Us" button */
 #about-us-btn {
   background-color: rgb(5, 185, 201);
   color: white;
-  // border: 2px solid rgb(0, 0, 0);
   margin-right: 5px;
-
   cursor: pointer;
 }
+
 #about-us-btn:hover {
   background-color: rgba(5, 185, 201, 0.61);
   color: white;
 }
 
+/* Styling for the "Contact Us" button */
 #contact-us-btn {
   background-color: rgb(28, 201, 5);
   color: white;
   cursor: pointer;
-  // // border: 2px solid rgb(0, 0, 0);
-  // // transition: background-color 0.3s, color 0.3s;
 }
+
 #contact-us-btn:hover {
   background-color: rgba(29, 201, 3, 0.61);
   color: white;
-  
 }
 
+/* Styling for the "Journal" button */
 #journal-btn{
   margin-left: 5px;
   background-color: #f85dc4;
@@ -65,9 +67,9 @@ img {
 #journal-btn:hover {
   background-color: #f85dc4;
   color: #fff;
-  
 }
 
+/* Styling for the "Wellness" button */
 #wellness-btn{
   margin-left: 5px;
   background-color: #ffffff;
@@ -78,9 +80,9 @@ img {
 #wellness-btn:hover {
   background-color: #000;
   color: #ffffff;
-  
 }
 
+/* Styling for the "Home" button */
 #home-btn{
   margin-left: 5px;
   background-color: #f9ff9e;
@@ -91,9 +93,9 @@ img {
 #home-btn:hover {
   background-color: #f9ff9e;
   color: #0000009d;
-  
 }
-//----------------------------------------------------------------
+
+/* Styling for navigation buttons */
 .nav-button {
   display: inline-block;
   width: 120px; /* Adjust the width as needed */
@@ -105,7 +107,7 @@ img {
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-/* Optional: Style for hover and active states */
+/* Optional: Styling for hover and active states of navigation buttons */
 .nav-button:hover,
 .nav-button:active {
   background-color: #6c757d;

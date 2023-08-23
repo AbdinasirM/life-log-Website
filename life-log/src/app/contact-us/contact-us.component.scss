@@ -1,16 +1,12 @@
-// .col-md-6{
-//     position: absolute;
-//     top: 25%;
-//     transform: transformY(25);
-// }
 #submitBtn{
-    margin-top: 2%;
-    background-color: rgb(5, 185, 201);
-    border: 1px solid black
+    margin-top: 2%; /* Add margin at the top */
+    background-color: rgb(5, 185, 201); /* Button background color */
+    border: 1px solid black; /* Button border */
 }
+
 #submitBtn:hover{
-    transition: .3s;
-    background-color: rgb(2, 139, 151);
-    opacity: 0.8;
-    color: white;
+    transition: .3s; /* Add transition effect */
+    background-color: rgb(2, 139, 151); /* Button background color on hover */
+    opacity: 0.8; /* Reduce opacity on hover */
+    color: white; /* Change text color to white on hover */
 }

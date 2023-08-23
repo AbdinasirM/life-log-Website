@@ -1,35 +1,39 @@
-// *{
-//     margin-top: 55px;
-// }
+/* Styling for the sign-up button */
+#signUp {
+  background-color: rgb(3, 195, 3); // Green background color
+  color: white; // White text color
+  border: 1px solid rgb(0, 0, 0); // Black border
+}
 
-#signUp{
-    background-color: rgb(3, 195, 3);
-    color: white;
-    border: 1px solid rgb(0, 0, 0);
+#signUp:hover {
+  transition: 0.3s; // Transition effect on hover
+  background-color: rgb(1, 156, 1); // Darker green background on hover
+  color: white; // White text color on hover
 }
-#signUp:hover{
-    transition: .3s;
-    background-color: rgb(1, 156, 1);
-    color: white;
+
+/* Styling for the sign-in button */
+#signIn {
+  background-color: rgb(5, 185, 201); // Blue background color
+  color: white; // White text color
+  border: 1px solid rgb(0, 0, 0); // Black border
 }
-#signIn{
-    background-color: rgb(5, 185, 201);
-    color: white;
-    border: 1px solid rgb(0, 0, 0);
+
+#signIn:hover {
+  transition: 0.3s; // Transition effect on hover
+  background-color: rgb(2, 139, 151); // Darker blue background on hover
+  opacity: 0.8; // Slight opacity decrease on hover
+  color: white; // White text color on hover
 }
-#signIn:hover{
-    transition: .3s;
-    background-color: rgb(2, 139, 151);
-    opacity: 0.8;
-    color: white;
+
+/* Styling for the Google sign-in button */
+#sign-google {
+  background-color: rgb(182, 180, 180); // Light gray background color
+  color: black; // Black text color
+  border: 1px solid rgb(0, 0, 0); // Black border
 }
-#sign-google{
-    background-color: rgb(182, 180, 180);
-    color: black;
-    border: 1px solid rgb(0, 0, 0);
-}
-#sign-google:hover{
-    transition: .3s;
-    background-color: #DB4437;
-    color: white;
+
+#sign-google:hover {
+  transition: 0.3s; // Transition effect on hover
+  background-color: #db4437; // Red background on hover
+  color: white; // White text color on hover
 }

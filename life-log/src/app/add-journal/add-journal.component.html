@@ -1,33 +1,32 @@
-<div class="container mt-5">  
-    <div class="row justify-content-center">
-      <div class="col-md-8 col-lg-6 bg-light p-4 rounded shadow">
-        <form [formGroup]="journalForm" (ngSubmit)="addJournal()">
-          <div class="mb-3">
-            <label for="title" class="form-label">Title</label>
-            <input type="text" class="form-control" id="title" formControlName="title">
-            <div *ngIf="journalForm.controls['title'].invalid && journalForm.controls['title'].touched" class="text-danger">
-              Title is required.
-            </div>
+<div class="container mt-5"> <!-- Container for the form -->
+  <div class="row justify-content-center"> <!-- Centered row for content -->
+    <div class="col-md-8 col-lg-6 bg-light p-4 rounded shadow"> <!-- Form column -->
+      <form [formGroup]="journalForm" (ngSubmit)="addJournal()"> <!-- Form with formGroup and ngSubmit event binding -->
+        <div class="mb-3">
+          <label for="title" class="form-label">Title</label> <!-- Label for the title input -->
+          <input type="text" class="form-control" id="title" formControlName="title"> <!-- Title input with formControlName -->
+          <div *ngIf="journalForm.controls['title'].invalid && journalForm.controls['title'].touched" class="text-danger">
+            Title is required. <!-- Validation error message -->
           </div>
-          <div class="mb-3">
-            <label for="about" class="form-label">About the Journal</label>
-            <textarea class="form-control" id="about" formControlName="about" rows="3"></textarea>
-            <div *ngIf="journalForm.controls['about'].invalid && journalForm.controls['about'].touched" class="text-danger">
-              Text is required.
-            </div>
+        </div>
+        <div class="mb-3">
+          <label for="about" class="form-label">About the Journal</label> <!-- Label for the about textarea -->
+          <textarea class="form-control" id="about" formControlName="about" rows="3"></textarea> <!-- About textarea with formControlName -->
+          <div *ngIf="journalForm.controls['about'].invalid && journalForm.controls['about'].touched" class="text-danger">
+            Text is required. <!-- Validation error message -->
           </div>
-          <div class="mb-3">
-            <label for="text" class="form-label">Text</label>
-            <textarea class="form-control" id="text" formControlName="text" rows="5"></textarea>
-            <div *ngIf="journalForm.controls['text'].invalid && journalForm.controls['text'].touched" class="text-danger">
-              Text is required.
-            </div>
+        </div>
+        <div class="mb-3">
+          <label for="text" class="form-label">Text</label> <!-- Label for the text textarea -->
+          <textarea class="form-control" id="text" formControlName="text" rows="5"></textarea> <!-- Text textarea with formControlName -->
+          <div *ngIf="journalForm.controls['text'].invalid && journalForm.controls['text'].touched" class="text-danger">
+            Text is required. <!-- Validation error message -->
           </div>
-          <div class="d-grid">
-            <button type="submit" class="btn btn-primary" [disabled]="journalForm.invalid">Save Journal</button>
-          </div>
-        </form>
-      </div>
+        </div>
+        <div class="d-grid">
+          <button type="submit" class="btn btn-primary" [disabled]="journalForm.invalid">Save Journal</button> <!-- Submit button with disabled attribute based on form validity -->
+        </div>
+      </form>
     </div>
   </div>
-  
+</div>

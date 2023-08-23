@@ -1,56 +1,20 @@
-// const mongoose = require("mongoose");
-
-// mongoose.connect(process.env.MONGODB_JOURNAL_URL, {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
-// });
-
-// const db = mongoose.connection;
-// db.on("error", console.error.bind(console, "Connection error:"));
-// db.once("open", () => {
-//   console.log("Connected to journals database");
-// });
-
-// module.exports = db;
-
 const mongoose = require("mongoose");
-
-
-
-
+// Connect to the MongoDB database using the provided connection string
 mongoose.connect("mongodb+srv://plstk7623:ezXHp1fGqSxx0A8y@cluster0.bxipjxd.mongodb.net/note-taking-db", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
 
+// Get the default connection object
 const journalDB = mongoose.connection;
+
+// Event handler for connection errors
 journalDB.on("error", console.error.bind(console, "Connection error:"));
+
+// Event handler for successful connection
 journalDB.once("open", () => {
   console.log("Connected to the database");
 });
+// Export the connection object
 
 module.exports = journalDB;
-
-
-// const mongoose = require('mongoose');
-
-// // Your journals database connection URL
-// const journalsDBUrl = process.env.MONGODB_JOURNAL_URL;
-
-// // Create a Mongoose instance
-// const journalsDBConnection = mongoose.createConnection(journalsDBUrl, {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
-// });
-
-// module.exports = journalsDBConnection;
-
-
-// // journals_db.js
-// const mongoose = require('mongoose');
-// const journalsDBUrl = process.env.MONGODB_JOURNAL_URL;
-// const journalsDBConnection = mongoose.createConnection(journalsDBUrl, {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
-// });
-// module.exports = journalsDBConnection;

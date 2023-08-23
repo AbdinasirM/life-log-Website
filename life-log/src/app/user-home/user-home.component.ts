@@ -1,49 +1,31 @@
-// import { Component, OnInit } from '@angular/core';
-// import { AuthService } from '../auth.service';
-
-// @Component({
-//   selector: 'app-user-home',
-//   templateUrl: './user-home.component.html',
-//   styleUrls: ['./user-home.component.scss']
-// })
-// export class UserHomeComponent implements OnInit {
-//   constructor(private auth: AuthService) {}
-
-//   usernames: any;
-
-//   ngOnInit() {
-//     this.getUsernames();
-//   }
-
-//   getUsernames() {
-//     // Assuming the AuthService provides a method to get the username
-//     this.usernames = this.auth.getUsernameFromToken(); // Replace with the actual method to get the username
-//   }
-// }
-
+// Import necessary modules and services
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../auth.service';
+import { AuthService } from '../auth.service'; // Import your custom AuthService
 
 @Component({
-  selector: 'app-user-home',
-  templateUrl: './user-home.component.html',
-  styleUrls: ['./user-home.component.scss']
+  selector: 'app-user-home', // Component selector
+  templateUrl: './user-home.component.html', // Template file for rendering UI
+  styleUrls: ['./user-home.component.scss'] // Styling specific to this component
 })
 export class UserHomeComponent implements OnInit {
-  username: string = ""
+  username: string = ""; // Initialize an empty username
 
-  constructor(private auth: AuthService) {}
+  constructor(private auth: AuthService) {
+    // Inject AuthService into the component
+  }
 
   ngOnInit() {
+    // When the component initializes, fetch the current user's information
     this.auth.getCurrentUser().subscribe(
       (currentLoggedIn) => {
+        // Check if user information is available
         if (currentLoggedIn && currentLoggedIn.user && currentLoggedIn.user.name) {
-          this.username = currentLoggedIn.user.name;
-         
+          this.username = currentLoggedIn.user.name; // Set the username from user information
         }
       },
       (error) => {
-        console.error('Error fetching user information:', error);
+        // console.error('Error fetching user information:', error); // Log an error if fetching user info fails
+        alert('Error fetching user information' + error.message); // 
       }
     );
   }

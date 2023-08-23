@@ -1,17 +1,10 @@
-const express = require("express");
-const router = express.Router();
-const Note = require("../models/Notes");
-const auth = require("../middleware/auth")
-// Define the GET endpoint to fetch all notes
-// router.get("/notes",auth, async (req, res) => {
-//   try {
-//     const notes = await Note.find({ createdBy: auth.id }); // Use the Note model to fetch all notes
-//     res.json(notes);
-//   } catch (error) {
-//     res.status(500).json({ message: error.message });
-//   }
-// });
+const express = require("express"); // Import the Express framework
+const router = express.Router(); // Create a router instance
+const Note = require("../models/Notes"); // Import the Note model
+const auth = require("../middleware/auth"); // Import the authentication middleware
 
+
+// Define the GET endpoint to fetch all notes
 router.get("/notes", auth, async (req, res) => {
   try {
     const notes = await Note.find({ createdBy: req.user._id });
@@ -34,9 +27,9 @@ router.post("/notes/add", auth, async (req, res) => {
 
  try {
     const newNote = await note.save(); // Save the new note to the database
-    res.json(newNote);
+    res.json(newNote);// Respond with the fetched notes
 }catch (error) {
-    res.status(500).json({ message: error.message });
+    res.status(500).json({ message: error.message }); // Handle errors
  }
 });
 
@@ -61,4 +54,4 @@ router.put("/notes/update/:id", auth, async (req, res) => {
 })
 
 
-module.exports = router;
+module.exports = router;// Export the router for use in other parts of the application

@@ -1,7 +1,8 @@
-const express = require('express');
-const mongoose = require('mongoose');
+const express = require('express'); // Import the Express framework
+const mongoose = require('mongoose'); // Import the Mongoose library for MongoDB interactions
 
 
+// Create a blueprint for the wellness schema.
 const wellnessSchema = new mongoose.Schema({
     breakfast: {
         type: String,
@@ -55,7 +56,9 @@ const wellnessSchema = new mongoose.Schema({
 });
 
 
-
+// Create the Wellness model using the defined schema.
 const Wellness = mongoose.model('Wellness', wellnessSchema);
 
+
+// Export the Wellness model for use in other parts of the application.
 module.exports = Wellness;

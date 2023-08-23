@@ -1,192 +1,115 @@
-<!-- <div class="container text-center">
-	<div class="row">
-		<div class="col-sm-6">
-			<img
-				src="https://freedesignfile.com/upload/2018/03/Young-people-working-out-at-the-gym-Stock-Photo-01.jpg"
-				class="img-responsive"
-				style="width: 65%; height: 65%"
-				alt="Image" />
-		</div>
-		<div class="col-sm-6" style="margin-top: 15%">
-			this may cause problems later
-			<div class="rounded" style="letter-spacing: 1px; word-spacing: 1px">
-				<h4>
-					Life Log is your all-inclusive hub for self-expression
-					through journaling and holistic health tracking. Nurture
-					your well-being, both physically and mentally, in one
-					harmonious space. 
-				</h4>
-				<br>
-				<h4 class="mt-4">
-					Get started today and begin your journey to a healthier
-					lifestyle!
-				</h4>
-			</div>
-			<div class="rounded w-75 mx-auto mt-2">
-				<div
-					class="well d-flex align-items-center justify-content-center mt-0">
-					<button (click)="signOut()" id="signUp" class="btn btn-primary me-1 w-50">
-						Sign Up
-					</button>
-					<button (click)="signIn()" id="signIn" class="btn btn-success ms-1 w-50">
-						Sign In
-					</button>
-				</div>
-				<button
-					id="sign-google"
-					class="btn btn-danger mt-2 d-flex justify-content-center align-items-center w-100">
-					<img
-						class="me-2 media mt-0"
-						src="https://cdn.freebiesupply.com/logos/large/2x/google-g-2015-logo-png-transparent.png"
-						alt="logo"
-						width="20px"
-						height="20px" />
-					<span class="mt-0"> Continue with Google</span>
-				</button>
-			</div>
-		</div>
-	</div>
-</div> -->
+<div class="container mt-4">
+  <div class="jumbotron">
+    <div class="row">
+      <!-- Left column with image -->
+      <div class="col-md-6 d-flex justify-content-center">
+        <img
+          src="https://images.pexels.com/photos/17817258/pexels-photo-17817258/free-photo-of-colorful-macaw-parrot-head.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          class="img-fluid rounded-start"
+          alt="Parrot Image"
+        />
+      </div>
+      <!-- Right column with welcome message and buttons -->
+      <div class="col-md-6">
+        <h2 class="display-5 fw-bold">Welcome to Life Log</h2>
+        <p class="lead">
+          Life Log is your all-inclusive hub for self-expression through
+          journaling and holistic health tracking. Nurture your well-being, both
+          physically and mentally, in one harmonious space.
+        </p>
 
-  
-	<!-- <div class="container mt-4">
-		<div class="jumbotron">
-			<div class="row">
-				<div class="col-md-6 d-flex justify-content-center">
-					<img src="https://images.pexels.com/photos/17817258/pexels-photo-17817258/free-photo-of-colorful-macaw-parrot-head.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid rounded-start" alt="...">
-				</div>
-				<div class="col-md-6">
-					<h2 class="display-5 fw-bold">Welcome to Life Log</h2>
-					<p class="lead">Life Log is your all-inclusive hub for self-expression through journaling and holistic health tracking. Nurture your well-being, both physically and mentally, in one harmonious space.</p>
-				  
-					<div class="well d-flex align-items-center justify-content-center mt-4">
-                        <button (click)="signOut()" id="signUp" class="btn btn-primary me-2 fs-5 w-50">Sign Up</button>
-                        <button (click)="signIn()" id="signIn" class="btn btn-success ms-2 fs-5 w-50">Sign In</button>
-                    </div>
-				  
-					<button id="sign-google" class="btn btn-danger mt-4 d-flex justify-content-center align-items-center w-100 fs-5">
-                        <img class="me-2 media" src="https://cdn.freebiesupply.com/logos/large/2x/google-g-2015-logo-png-transparent.png" alt="logo" width="20px" height="20px" />
-                        <span>Continue with Google</span>
-                    </button>
-				</div>
-			</div>
-		</div>
-		
-	</div> -->
-	
-<!--
-<div class="container">
+        <!-- Button container -->
+        <div class="well d-flex align-items-center justify-content-center mt-4">
+          <button
+            (click)="signOut()"
+            id="signUp"
+            class="btn btn-primary me-2 fs-5 w-50"
+          >
+            Sign Up
+          </button>
+          <button
+            (click)="signIn()"
+            id="signIn"
+            class="btn btn-success ms-2 fs-5 w-50"
+          >
+            Sign In
+          </button>
+        </div>
 
-  <div class="container py-4">
-    <header class="pb-3 mb-4 border-bottom">
-    </header>
-    <div class="row align-items-md-stretch">
-		<h2 class="text-center mb-4">You can </h2>
-      <div class="col-md-6 mb-4">
-        <div class="h-100 p-5 text-white bg-dark rounded-3">
-          <h2>Journal Daily</h2>
-          <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
-          <button class="btn btn-outline-light" type="button">Example button</button>
-        </div>
-      </div>
-      <div class="col-md-6 mb-4">
-        <div class="h-100 p-5 bg-light border rounded-3">
-          <h2>Keep track on calory intake</h2>
-          <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
-          <button class="btn btn-outline-secondary" type="button">Example button</button>
-        </div>
-      </div>
-	  <div class="col-md-6 mb-4">
-        <div class="h-100 p-5 bg-light border rounded-3">
-          <h2>Add borders</h2>
-          <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
-          <button class="btn btn-outline-secondary" type="button">Example button</button>
-        </div>
-      </div>
-	  <div class="col-md-6 mb-4">
-        <div class="h-100 p-5 bg-light border rounded-3">
-          <h2>Add borders</h2>
-          <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
-          <button class="btn btn-outline-secondary" type="button">Example button</button>
-        </div>
+        <!-- Google sign-in button -->
+        <button
+          id="sign-google"
+          class="btn btn-danger mt-4 d-flex justify-content-center align-items-center w-100 fs-5"
+        >
+          <img
+            class="me-2 media"
+            src="https://cdn.freebiesupply.com/logos/large/2x/google-g-2015-logo-png-transparent.png"
+            alt="Google Logo"
+            width="20px"
+            height="20px"
+          />
+          <span>Continue with Google</span>
+        </button>
       </div>
     </div>
+  </div>
+</div>
 
-    <footer class="pt-3 mt-4 text-muted border-top">
-      
-    </footer>
+<!-- Section with features -->
+<div class="container py-4">
+  <header class="pb-3 mb-4 border-bottom"></header>
+  <div class="row align-items-md-stretch">
+    <!-- Feature: Journal Daily -->
+    <div class="col-md-6 mb-4">
+      <div class="h-100 p-5 text-white bg-dark rounded-3">
+        <h2>Journal Daily</h2>
+        <p>
+          Life Log offers a platform for daily journaling, allowing you to
+          express yourself and reflect on your experiences.
+        </p>
+        <button class="btn btn-outline-light" type="button">Get Started</button>
+      </div>
+    </div>
+    <!-- Feature: Keep Track of Calorie Intake -->
+    <div class="col-md-6 mb-4">
+      <div class="h-100 p-5 bg-warning border rounded-3">
+        <h2>Keep Track of Calorie Intake</h2>
+        <p>
+          Monitor your caloric intake and make informed choices about your diet
+          and health.
+        </p>
+        <button class="btn btn-outline-secondary" type="button">
+          Learn More
+        </button>
+      </div>
+    </div>
+    <!-- Feature: Stay Active -->
+    <div class="col-md-6 mb-4">
+      <div class="h-100 p-5 bg-primary text-light border rounded-3">
+        <h2>Stay Active</h2>
+        <p>
+          Engage in physical activities and track your progress towards a
+          healthier lifestyle.
+        </p>
+        <button class="btn btn-outline-light" type="button">
+          Discover Activities
+        </button>
+      </div>
+    </div>
+    <!-- Feature: Prioritize Mental Well-being -->
+    <div class="col-md-6 mb-4">
+      <div class="h-100 p-5 bg-success text-light border rounded-3">
+        <h2>Prioritize Mental Well-being</h2>
+        <p>
+          Nurture your mental health through mindful practices and self-care
+          strategies.
+        </p>
+        <button class="btn btn-outline-light" type="button">
+          Explore Mindfulness
+        </button>
+      </div>
+    </div>
   </div>
 
-</div> -->
-
-
-
-<div class="container mt-4">
-	<div class="jumbotron">
-		<div class="row">
-			<div class="col-md-6 d-flex justify-content-center">
-				<img src="https://images.pexels.com/photos/17817258/pexels-photo-17817258/free-photo-of-colorful-macaw-parrot-head.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid rounded-start" alt="...">
-			</div>
-			<div class="col-md-6">
-				<h2 class="display-5 fw-bold">Welcome to Life Log</h2>
-				<p class="lead">Life Log is your all-inclusive hub for self-expression through journaling and holistic health tracking. Nurture your well-being, both physically and mentally, in one harmonious space.</p>
-			  
-				<div class="well d-flex align-items-center justify-content-center mt-4">
-					<button (click)="signOut()" id="signUp" class="btn btn-primary me-2 fs-5 w-50">Sign Up</button>
-					<button (click)="signIn()" id="signIn" class="btn btn-success ms-2 fs-5 w-50">Sign In</button>
-				</div>
-			  
-				<button id="sign-google" class="btn btn-danger mt-4 d-flex justify-content-center align-items-center w-100 fs-5">
-					<img class="me-2 media" src="https://cdn.freebiesupply.com/logos/large/2x/google-g-2015-logo-png-transparent.png" alt="logo" width="20px" height="20px" />
-					<span>Continue with Google</span>
-				</button>
-			</div>
-		</div>
-	</div>
-	
+  <footer class="pt-3 mt-4 text-muted border-top"></footer>
 </div>
-
-<div class="container py-4">
-    <header class="pb-3 mb-4 border-bottom">
-    </header>
-    <div class="row align-items-md-stretch">
-        <h2 class="text-center mb-4">You can</h2>
-        <div class="col-md-6 mb-4">
-            <div class="h-100 p-5 text-white bg-dark rounded-3">
-                <h2>Journal Daily</h2>
-                <p>Life Log offers a platform for daily journaling, allowing you to express yourself and reflect on your experiences.</p>
-                <button class="btn btn-outline-light" type="button">Get Started</button>
-            </div>
-        </div>
-        <div class="col-md-6 mb-4">
-            <div class="h-100 p-5 bg-warning border rounded-3">
-                <h2>Keep Track of Calorie Intake</h2>
-                <p>Monitor your caloric intake and make informed choices about your diet and health.</p>
-                <button class="btn btn-outline-secondary" type="button">Learn More</button>
-            </div>
-        </div>
-        <div class="col-md-6 mb-4">
-            <div class="h-100 p-5 bg-primary text-light border rounded-3">
-                <h2>Stay Active</h2>
-                <p>Engage in physical activities and track your progress towards a healthier lifestyle.</p>
-                <button class="btn btn-outline-light" type="button">Discover Activities</button>
-            </div>
-        </div>
-        <div class="col-md-6 mb-4">
-            <div class="h-100 p-5 bg-success text-light border rounded-3">
-                <h2>Prioritize Mental Well-being</h2>
-                <p>Nurture your mental health through mindful practices and self-care strategies.</p>
-                <button class="btn btn-outline-light" type="button">Explore Mindfulness</button>
-            </div>
-        </div>
-    </div>
-
-    <footer class="pt-3 mt-4 text-muted border-top">
-    </footer>
-</div>
-
-<!-- img
-paragraph
-sign up
-sign in
-sign in with google -->

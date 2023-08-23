@@ -1,12 +1,15 @@
-.fa-star{
-  color: yellow;
-  font-size: 20px;
+/* Styles for star icons */
+.fa-star {
+  color: yellow; /* Set star color to yellow */
+  font-size: 20px; /* Set font size for the star icons */
 }
 
-.empty{
-  color: gray;
+/* Hover effect for star icons */
+.fa-star:hover {
+  color: yellow; /* Maintain yellow color on hover */
 }
-// .container{
-//   margin-top: 7%;
-// }
 
+/* Styling for empty/unfilled star icons */
+.empty {
+  color: gray; /* Set color to gray for unfilled stars */
+}

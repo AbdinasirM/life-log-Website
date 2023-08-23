@@ -1,95 +1,51 @@
-<!-- <div class="container">
-  <div class="row justify-content-center">
-    <div class="col-md-6">
-      <div class="card">
-        <div class="card-header bg-primary">Sign In</div>
-        <div class="card-body">
-          <form (ngSubmit)="onSubmit()">
-            <div class="mb-3">
-              <label for="email" class="form-label">Email address</label>
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                placeholder="Enter your email"
-				[(ngModel)]="credentials.email"
-        		required
-              />
-            </div>
-            <div class="mb-3">
-              <label for="password" class="form-label">Password</label>
-              <input
-                type="password"
-				name="password"
-                class="form-control"
-                id="password"
-                placeholder="Enter your password"
-				[(ngModel)]="credentials.password"
-        		required
-              />
-            </div>
-            <div class="container">
-              <div class="row">
-                <div class="col-md-12 d-flex justify-content-center">
-                  <button class="btn btn-primary" type="submit">Sign in</button>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-      <hr class="mt-5" />
-      <p class="text-center">or</p>
-      <hr />
-      <button
-        id="sign-google"
-        class="btn mt-5 d-flex justify-content-center align-items-center w-100"
-      >
-        <img
-          class="me-2 media mt-0"
-          src="https://cdn.freebiesupply.com/logos/large/2x/google-g-2015-logo-png-transparent.png"
-          alt="logo"
-          width="20px"
-          height="20px"
-        />
-        <span class="mt-0"> Continue with Google</span>
-      </button>
-    </div>
-  </div>
-</div> -->
-
+<!-- Container for the sign-in UI -->
 <div class="container">
+  <!-- Row with centered content -->
   <div class="row justify-content-center">
+    <!-- Medium-sized column for the sign-in card -->
     <div class="col-md-6">
+      <!-- Card to hold the sign-in form -->
       <div class="card">
+        <!-- Card header with primary background -->
         <div class="card-header bg-primary">Sign In</div>
+        <!-- Card body containing the form -->
         <div class="card-body">
+          <!-- Form with ngSubmit event handler -->
           <form (ngSubmit)="onSubmit()">
+            <!-- Input field for email -->
             <div class="mb-3">
               <label for="email" class="form-label">Email address</label>
+              <!-- Email input with ngModel for two-way data binding -->
               <input
                 type="email"
                 class="form-control"
                 id="email"
                 name="email"
-            
-              placeholder="Enter your email" [(ngModel)]="credentials.email"
-              required />
+                placeholder="Enter your email"
+                [(ngModel)]="credentials.email"
+                required
+              />
             </div>
+            <!-- Input field for password -->
             <div class="mb-3">
               <label for="password" class="form-label">Password</label>
+              <!-- Password input with ngModel for two-way data binding -->
               <input
                 type="password"
                 class="form-control"
                 id="password"
                 name="password"
-            
-              placeholder="Enter your password"
-              [(ngModel)]="credentials.password" required />
+                placeholder="Enter your password"
+                [(ngModel)]="credentials.password"
+                required
+              />
             </div>
+            <!-- Container for layout -->
             <div class="container">
               <div class="row">
+                <!-- Column for the button -->
                 <div class="col-md-12 d-flex justify-content-center">
+                  <!-- Button to initiate the sign-in process -->
                   <button class="btn btn-primary" type="submit">Sign in</button>
                 </div>
               </div>
@@ -97,13 +53,18 @@
           </form>
         </div>
       </div>
+      <!-- Horizontal rule for separation -->
       <hr class="mt-5" />
+      <!-- Centered text for alternative sign-in option -->
       <p class="text-center">or</p>
+      <!-- Another horizontal rule for separation -->
       <hr />
+      <!-- Button for Google sign-in -->
       <button
         id="sign-google"
         class="btn mt-5 d-flex justify-content-center align-items-center w-100"
       >
+        <!-- Google logo image -->
         <img
           class="me-2 media mt-0"
           src="https://cdn.freebiesupply.com/logos/large/2x/google-g-2015-logo-png-transparent.png"
@@ -111,37 +72,9 @@
           width="20px"
           height="20px"
         />
+        <!-- Text for Google sign-in option -->
         <span class="mt-0"> Continue with Google</span>
       </button>
     </div>
   </div>
 </div>
-
-<!-- <div class="login-container">
-  <h2>Login</h2>
-  <form (ngSubmit)="onSubmit()">
-    <div class="form-group">
-      <label for="email">Email:</label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        class="form-control"
-        [(ngModel)]="credentials.email"
-        required
-      />
-    </div>
-    <div class="form-group">
-      <label for="password">Password:</label>
-      <input
-        type="password"
-        id="password"
-        name="password"
-        class="form-control"
-        [(ngModel)]="credentials.password"
-        required
-      />
-    </div>
-    <button type="submit" class="btn btn-primary">Login</button>
-  </form>
-</div> -->

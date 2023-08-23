@@ -1,108 +1,64 @@
-<!-- <div class="container">
-	<div class="row justify-content-center">
-		<div class="col-md-6">
-			<div class="card">
-				<div class="card-header bg-primary">Sign Up</div>
-				<div class="card-body">
-					<form>
-						<div class="mb-3">
-							<label for="email" class="form-label"
-								>Email address</label>
-							<input
-								type="email"
-								class="form-control"
-								id="email"
-								placeholder="Enter your email" />
-						</div>
-						<div class="mb-3">
-							<label for="password" class="form-label"
-								>Password</label>
-							<input
-								type="password"
-								class="form-control"
-								id="password"
-								placeholder="Enter your password" />
-							<label for="password" class="form-label mt-3">
-								Confirm Password</label>
-							<input
-								type="password"
-								class="form-control"
-								id="password"
-								placeholder="Confirm your password" />
-						</div>
-						 <button
-							type="submit"
-							id="submitBtn"
-							class="btn btn-primary mx-auto">
-							Sign Up
-						</button> 
-						<div class="container">
-							<div class="row">
-								<div class="col-md-12 d-flex justify-content-center">
-									<button class="btn btn-primary">Sign up</button>
-								</div>
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-</div> -->
+<!-- Sign Up Form Section -->
 <div class="container">
-	<div class="row justify-content-center">
-	  <div class="col-md-6">
-		<div class="card">
-		  <div class="card-header bg-primary">Sign Up</div>
-		  <div class="card-body">
-			<form (ngSubmit)="onSubmit()">
-			  <div class="mb-3">
-				<label for="name" class="form-label">Full Name</label>
-				<input
-				  type="text"
-				  class="form-control"
-				  id="name"
-				  name="name"
-				  placeholder="Enter your full name"
-				  [(ngModel)]="user.name"
-				  required
-				/>
-			  </div>
-			  <div class="mb-3">
-				<label for="email" class="form-label">Email address</label>
-				<input
-				  type="email"
-				  class="form-control"
-				  id="email"
-				  name="email"
-				  placeholder="Enter your email"
-				  [(ngModel)]="user.email"
-				  required
-				/>
-			  </div>
-			  <div class="mb-3">
-				<label for="password" class="form-label">Password</label>
-				<input
-				  type="password"
-				  class="form-control"
-				  id="password"
-				  name="password"
-				  placeholder="Enter your password"
-				  [(ngModel)]="user.password"
-				  required
-				/>
-			  </div>
-			  <div class="container">
-				<div class="row">
-				  <div class="col-md-12 d-flex justify-content-center">
-					<button class="btn btn-primary" type="submit">Sign Up</button>
-				  </div>
-				</div>
-			  </div>
-			</form>
-		  </div>
-		</div>
-	  </div>
-	</div>
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <!-- Card header with a primary background -->
+        <div class="card-header bg-primary">Sign Up</div>
+        <div class="card-body">
+          <!-- Form to submit user registration -->
+          <form (ngSubmit)="onSubmit()">
+            <!-- Input field for Full Name -->
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                placeholder="Enter your full name"
+                [(ngModel)]="user.name"
+                required
+              />
+            </div>
+            <!-- Input field for Email -->
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                [(ngModel)]="user.email"
+                required
+              />
+            </div>
+            <!-- Input field for Password -->
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                [(ngModel)]="user.password"
+                required
+              />
+            </div>
+            <!-- Container for the Sign Up button -->
+            <div class="container">
+              <div class="row">
+                <!-- Column for the button -->
+                <div class="col-md-12 d-flex justify-content-center">
+                  <button class="btn btn-primary" type="submit">Sign Up</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
-  
+</div>

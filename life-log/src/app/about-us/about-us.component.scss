@@ -1,28 +1,26 @@
-// .row {
-// 	align-items: center;
-// 	// margin-top: 15%;
-// 	// top: 17.5%;
-// 	transform: transformY(17.5);
-// }
 .icons img {
-	width: auto;
-	height: 27px;
-	margin-right: 2px;
+	width: auto; /* Set width to auto to maintain aspect ratio */
+	height: 27px; /* Set the height of the icons */
+	margin-right: 2px; /* Add a small margin between icons */
 }
+
 .icons img:hover {
-	transition: 0.3s;
-	transform: scale(1.1);
+	transition: 0.3s; /* Add a smooth transition effect */
+	transform: scale(1.1); /* Enlarge the icon on hover */
 }
+
 #aboutPara {
-	letter-spacing: 1px;
+	letter-spacing: 1px; /* Add letter spacing to the text */
 }
+
 #brendanPic {
-	width: 40%;
-	border-radius: 450px;
-	border: 2px solid rgb(5, 185, 201);
+	width: 40%; /* Set the width of the image */
+	border-radius: 450px; /* Apply a rounded border radius */
+	border: 2px solid rgb(5, 185, 201); /* Add a border with a color */
 }
+
 #abdiPic {
-	width: 40%;
-	border-radius: 450px;
-	border: 2px solid rgb(5, 185, 201);
+	width: 40%; /* Set the width of the image */
+	border-radius: 450px; /* Apply a rounded border radius */
+	border: 2px solid rgb(5, 185, 201); /* Add a border with a color */
 }
