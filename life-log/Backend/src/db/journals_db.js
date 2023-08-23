@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
-// Connect to the MongoDB database using the provided connection string
-mongoose.connect("mongodb+srv://plstk7623:ezXHp1fGqSxx0A8y@cluster0.bxipjxd.mongodb.net/note-taking-db", {
+
+// Connect to the MongoDB database using the provided connection string from the environment variable
+mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -15,6 +16,6 @@ journalDB.on("error", console.error.bind(console, "Connection error:"));
 journalDB.once("open", () => {
   console.log("Connected to the database");
 });
-// Export the connection object
 
+// Export the connection object
 module.exports = journalDB;

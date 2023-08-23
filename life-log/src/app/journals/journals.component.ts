@@ -110,7 +110,7 @@ export class JournalsComponent implements OnInit {
       await this.journalService.deleteJournal(journalId).toPromise();
 
       // console.log('Deleted journal entry');
-      alert('Deleted journal entry');
+      // alert('Deleted journal entry');
       await this.loadUserProfile();
       location.reload(); // Reload the page
       this.router.navigate(['users/me']); // Redirect after successful deletion
