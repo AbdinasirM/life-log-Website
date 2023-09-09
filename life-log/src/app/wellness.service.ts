@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class WellnessService {
-  public wellnessUrl = 'http://localhost:3000/wellness';
+  public wellnessUrl = 'http://localhost:5000/wellness';
 
   constructor(private http: HttpClient) {}
 

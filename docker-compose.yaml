@@ -1,0 +1,46 @@
+version: '2.3'
+
+services:
+  mongo-community:
+    image: mongo:latest
+    container_name: life-log-website_mongodb
+    ports:
+      - '27017:27017'
+    networks:
+      - my-network
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: changeusername
+      MONGO_INITDB_ROOT_PASSWORD: changepassword
+    volumes:
+      - mongo_community_data:/data/db
+    command: mongod --port 27017
+    
+
+  backend:
+    build:
+      context: ./Backend
+    ports:
+      - '5000:5000'
+    restart: always
+    depends_on:
+      - mongo-community  # Wait for MongoDB to be up before starting
+    links:
+      - mongo-community  # Link the containers
+    network_mode: "host"
+    
+
+  frontend:
+    build:
+      context: ./life-log
+    ports:
+      - '80:80'
+    networks:
+      - my-network
+
+
+networks:
+  my-network:
+    driver: bridge
+
+volumes:
+  mongo_community_data: # Define the volume for the community edition MongoDB data

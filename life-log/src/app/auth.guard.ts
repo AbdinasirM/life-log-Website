@@ -36,6 +36,17 @@ export class AuthGuard implements CanActivate {
         return true;
       }
     }
+    
+    if (state.url === '/') {
+      if (isAuthenticated) {
+        // Redirect authenticated users to /home
+        return this.router.parseUrl('/home');
+      } else {
+        // Allow unauthenticated users to access the sign-in page
+        return true;
+      }
+    }
+
 
     // For other protected routes
     if (!isAuthenticated) {

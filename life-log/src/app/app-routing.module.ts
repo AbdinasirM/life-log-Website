@@ -12,7 +12,7 @@ import { WellnessComponent } from './wellness/wellness.component';
 import { UserHomeComponent } from './user-home/user-home.component';
 
 const routes: Routes = [
-  { path: '', component: LandingPageComponent }, // Landing Page
+  { path: '', component: LandingPageComponent, canActivate: [AuthGuard]  }, // Landing Page
   { path: 'sign-up', component: SignUpComponent , canActivate: [AuthGuard]  }, // Sign Up with AuthGuard
   { path: 'about-us', component: AboutUsComponent }, // About Us
   { path: 'contact-us', component: ContactUsComponent }, // Contact Us

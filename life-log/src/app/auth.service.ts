@@ -7,7 +7,7 @@ import { map } from 'rxjs/operators'; // Import the map operator
   providedIn: 'root',
 })
 export class AuthService {
-  public apiUrl = 'http://localhost:3000'; // Update with your API URL
+  public apiUrl = 'http://localhost:5000'; // Update with your API URL
 
   constructor(private http: HttpClient) {}
 
