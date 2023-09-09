@@ -24,25 +24,49 @@ Life Log is a web application designed to serve as a personal journal and wellne
 
 - 🛣️ **Route Handling:** The backend handles routes for managing journal entries and wellness data. This allows users to interact with their data through RESTful API endpoints.
 
-**Next Steps:**
+**Deployment Steps:**
 
-This GitHub repository contains the source code and related files for the Life Log project. The project aims to create an organized platform for personal journaling and wellness tracking, promoting a healthier lifestyle and improved self-awareness.
+To get started with hosting the Life Log project locally, follow these steps:
 
-**Deployment and Contribution:**
+1. **Clone the Repository:**
 
-While the provided code represents local development, the project can be further deployed to a server for online access. Developers and contributors are welcome to explore, enhance, and contribute to the project's codebase by following the guidelines provided in the repository.
+   - Navigate to the branch 'deckorize-lifelog' in the repository.
+   - Clone the repository: `git clone https://github.com/AbdinasirM/life-log-Website.git`
 
-- **Explore the Code:** [GitHub Repository: Life Log Repository 🚀](https://github.com/AbdinasirM/life-log-Website)
+2. **Install Docker Desktop:**
 
-**Get Started:**
+   - For Windows/Mac users, install Docker Desktop.
+   - For Linux users, install Docker in your terminal.
 
-1. Clone the repository: `git clone https://github.com/AbdinasirM/life-log-Website.git`
-2. Navigate to the project directory: `cd life-log-Website`
-3. Set up and configure the frontend and backend environments.
-4. Run the application locally for testing and development.
+3. **Navigate to the Project Directory:**
 
-**Contributions:**
+   - Open a terminal window and navigate to where you downloaded the repository: `cd path/to/life-log-Website`
 
-Contributions are encouraged! If you have ideas for improvements, fixes, or new features, feel free to submit pull requests. Please follow the provided contribution guidelines in the repository.
+4. **Modify Docker Compose Configuration:**
 
-**Join Us in Keeping a Digital Journal and Promoting Wellness with Life Log! 🌟📔🌱**
+   - Inside the 'life-log' folder, locate the 'docker-compose.yml' file.
+   - Change the following environment variables:
+     ```yaml
+     environment:
+       MONGO_INITDB_ROOT_USERNAME: changeusername
+       MONGO_INITDB_ROOT_PASSWORD: changepassword
+     ```
+
+5. **Configure Backend:**
+
+   - Go to the 'Backend' folder inside the project.
+   - Modify the '.env' file with the following content:
+     ```plaintext
+     MONGODB_URI=mongodb://changeusername:changepassword@localhost:27017
+     JWT_KEY="makeasupersecretkey"
+     PORT=5000
+     ```
+
+6. **Start the Application:**
+
+   - In the terminal, run the following command to build and start the application: `docker compose up --build`
+
+7. **Access the Application:**
+
+   - After about 15 seconds, open your web browser and navigate to `localhost:80`.
+   - If you see the application running, congratulations! You have successfully self-hosted the Life Log project on your local machine. 🌟📔🌱
