@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class JournalService {
-  private journalsUrl = 'http://localhost:5000/notes';
+  private journalsUrl = 'https://life-log-s2dy.onrender.com/notes';
 
   constructor(private http: HttpClient) {}
 
