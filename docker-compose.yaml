@@ -14,11 +14,9 @@ services:
     volumes:
       - mongo_community_data:/data/db
     command: mongod --port 27017
-    
 
-  backend:
-    build:
-      context: ./Backend
+  lifelog-backend:
+    image: lifelog-backend:latest  # Replace with the actual image name and tag
     ports:
       - '5000:5000'
     restart: always
@@ -27,16 +25,13 @@ services:
     links:
       - mongo-community  # Link the containers
     network_mode: "host"
-    
 
-  frontend:
-    build:
-      context: ./life-log
+  lifelog-frontend:
+    image: lifelog-frontend:latest  # Replace with the actual image name and tag
     ports:
       - '80:80'
     networks:
       - my-network
-
 
 networks:
   my-network:

@@ -1,62 +1,51 @@
-Life Log - Personal Journal and Wellness Tracking Web App 📔🌱
-Description
-Life Log is a web application designed to serve as a personal journal and wellness tracking platform. This project utilizes modern web technologies to provide users with an intuitive interface for journaling their thoughts and tracking their wellness activities. The application is built using Angular for the frontend and Node.js with Express.js for the backend. Data is stored in a MongoDB database.
+# Life-Log Docker Compose Setup 🐳🍃📖
 
-Features
-🌟 User-Friendly Frontend: The frontend is developed using Angular, offering a smooth and responsive user experience. Navigating through different sections is made easy with a navigation bar and a footer providing access to key areas.
+This repository contains a Docker Compose configuration to run the Life-Log application with MongoDB, a backend, and a frontend. Follow these steps to get the application up and running on your machine.
 
-🔐 User Authentication: Secure user authentication is implemented. New users can sign up with their name, email, and password, while existing users can log in. An authentication guard ensures that certain sections are accessible only to authenticated users.
+## Prerequisites
 
-✍️ Personal Journaling: Users can create, edit, and delete journal entries. Each entry includes a title, description, and optional image. MongoDB stores the entries for easy retrieval and management.
+Before you begin, ensure you have the following:
 
-🏋️‍♂️ Wellness Tracking: The app lets users track wellness activities such as meals, water intake, exercise hours, sleep, snacks, and steps taken. This data is recorded and presented in a user-friendly format.
+- Git installed on your machine (for cloning the repository).
+- Docker installed on your machine.
 
-ℹ️ About Us and Contact Us: The "About Us" section provides insights into the project's creators, while the "Contact Us" section allows users to send messages to the development team.
+## Clone the Repository
 
-🔧 Backend Infrastructure: The backend is powered by Node.js and Express.js, serving as an API to handle frontend requests. User authentication and data processing are managed on the backend.
+Use Git to clone this repository to your local machine:
 
-🗄️ Database Management: MongoDB serves as the database for storing user profiles, journal entries, and wellness data. The backend communicates with MongoDB to retrieve, store, and update user-related information.
+```bash
+git clone https://github.com/AbdinasirM/life-log-docker.git
 
-👤 User Model and Authentication: The backend features a user model defining user attributes. User authentication relies on JSON Web Tokens (JWT) for enhanced security.
+Build and Run the Docker Compose Stack
+Navigate to the repository directory:
+bash
+Copy code
+cd life-log-docker
+Start the Docker Compose stack by running the following command:
+bash
+Copy code
+docker-compose up -d
+This command will build and start the Docker containers defined in the docker-compose.yml file in detached mode.
 
-🛣️ Route Handling: The backend handles routes for managing journal entries and wellness data. This allows users to interact with their data through RESTful API endpoints.
+Wait for the containers to start. This may take a moment, so be patient.
 
-Deployment Steps
-To get started with hosting the Life Log project locally, follow these steps:
+Once the containers are up and running, you can access the Life-Log application in your web browser:
 
-Clone the Repository:
+Frontend: http://localhost
+Backend: http://localhost:5000
+Stopping and Cleaning Up
+To stop and remove the containers, use the following command:
 
-Navigate to the branch 'deckorize-lifelog' in the repository.
-Clone the repository:
-git clone https://github.com/YourUsername/life-log-Website.git
-Install Docker Desktop:
+bash
+Copy code
+docker-compose down
+This will stop the containers and remove them, but it won't delete any data stored in the MongoDB volume. If you want to remove all data and volumes, use docker-compose down -v.
 
-For Windows/Mac users, install Docker Desktop.
-For Linux users, install Docker in your terminal.
-Navigate to the Project Directory:
+Additional Information
+The MongoDB instance is available on localhost:27017. You can access it with a MongoDB client.
 
-Open a terminal window and navigate to where you downloaded the repository:
-cd path/to/life-log-Website
-Modify Docker Compose Configuration:
+If you need to modify any configurations or environment variables, you can do so in the docker-compose.yml file.
 
-Inside the 'life-log' folder, locate the 'docker-compose.yml' file.
-Change the following environment variables:
-y
-environment:
-  MONGO_INITDB_ROOT_USERNAME: changeusername
-  MONGO_INITDB_ROOT_PASSWORD: changepassword
-Configure Backend:
+For more details about the Life-Log application, refer to the Life-Log GitHub repository.
 
-Go to the 'Backend' folder inside the project.
-Modify the '.env' file with the following content:
-MONGODB_URI=mongodb://changeusername:changepassword@localhost:27017
-JWT_KEY="makeasupersecretkey"
-PORT=5000
-Start the Application:
-
-In the terminal, run the following command to build and start the application:
-docker compose up --build
-Access the Application:
-
-After about 15 seconds, open your web browser and navigate to localhost:80.
-If you see the application running, congratulations! You have successfully self-hosted the Life Log project on your local machine. 🌟📔🌱
+Enjoy using Life-Log with Docker! 🚀
