@@ -60,5 +60,3 @@ This will stop the containers and remove them, but it won't delete any data stor
 
 Enjoy using Life-Log with Docker! 🚀
 ```
-
-I've formatted the text in Markdown as per your request.
