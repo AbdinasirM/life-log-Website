@@ -59,4 +59,3 @@ This will stop the containers and remove them, but it won't delete any data stor
 - For more details about the Life-Log application, refer to the [Life-Log GitHub repository](https://github.com/AbdinasirM/life-log).
 
 Enjoy using Life-Log with Docker! 🚀
-```
