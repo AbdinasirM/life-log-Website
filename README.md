@@ -42,11 +42,11 @@ This GitHub repository contains the source code and related files for the Life L
 While the provided code represents local development, the project can be further deployed to a server for online access. Developers and contributors are welcome to explore, enhance, and contribute to the project's codebase by following the guidelines provided in the repository.
 
 **Explore the Code:**
-GitHub Repository: [Life Log Repository](https://github.com/YourUsername/life-log-Website) 🚀
+GitHub Repository: [Life Log Repository](https://github.com/AbdinasirM/life-log-Website) 🚀
 
 **Get Started:**
 
-1. Clone the repository: `git clone https://github.com/YourUsername/life-log-Website.git`
+1. Clone the repository: `git clone https://github.com/AbdinasirM/life-log-Website.git`
 2. Navigate to the project directory: `cd life-log-Website`
 3. Set up and configure the frontend and backend environments.
 4. Run the application locally for testing and development.
